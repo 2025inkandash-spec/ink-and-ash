@@ -92,6 +92,24 @@
       .nav{ grid-template-columns: 1fr; }
       .tile{ min-height: 78px; }
     }
+    /* your existing CSS */
+
+.newsletter{
+  margin-top: 60px;
+  padding: 36px 24px;
+  background: #1F1815;
+  border: 1px solid #544842;
+  text-align: center;
+}
+
+/* rest of the newsletter styles */
+
+.newsletter button:hover{
+  opacity: .85;
+}
+
+</style>
+
   </style>
 </head>
 
@@ -107,6 +125,21 @@
       <a class="tile" href="works.html">Works in Progress</a>
       <a class="tile" href="projects.html">Other Projects</a>
     </div>
+      </div>
+
+  <div class="newsletter">
+    <h2>Stay in the Ashes</h2>
+    <p>Letters, new work, strange updates — only when it matters.</p>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <button type="submit">Join the Newsletter</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
   </div>
 </body>
 </html>
